@@ -1,4 +1,4 @@
-This contract has serveral assumptions
+##This contract has serveral assumptions
 
 Sale Process
 A. There will be a private pre-sale.
