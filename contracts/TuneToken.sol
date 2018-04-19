@@ -9,7 +9,7 @@ contract TuneToken is Pausable, StandardToken {
   string public constant symbol = "TUNE"; // solium-disable-line uppercase
   uint8 public constant decimals = 18; // solium-disable-line uppercase
 
-  uint256 public constant INITIAL_SUPPLY = 400000000;
+  uint256 public constant INITIAL_SUPPLY = 400000000 * (10 ** uint256(decimals));
 
   /**
    * @dev Constructor that gives msg.sender all of existing tokens.
