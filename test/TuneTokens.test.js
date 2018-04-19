@@ -32,21 +32,21 @@ contract("TuneToken", (accounts) => {
             })
     })
 
-    it("should set totalSupply to 1e17 TUNE", () => {
+    it("should set totalSupply to 400000000 TUNE", () => {
         return TuneToken.deployed().then((instance) => {
             return instance.totalSupply.call()
         })
             .then((supply) => {
-                assert.equal(supply, 1e17, "1e17 wasn't the value of totalSupply TUNE")
+                assert.equal(supply, 400000000, "400000000 wasn't the value of totalSupply TUNE")
             })
     })
 
-    it("should put 1e17 TUNE in the first account", () => {
+    it("should put 400000000 TUNE in the first account", () => {
         return TuneToken.deployed().then((instance) => {
             return instance.balanceOf.call(accounts[0])
         })
             .then((balance) => {
-                assert.equal(balance.valueOf(), 1e17, "1e17 TUNE were not assigned to the first account")
+                assert.equal(balance.valueOf(), 400000000, "400000000 TUNE were not assigned to the first account")
             })
     })
 

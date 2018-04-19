@@ -60,22 +60,22 @@
   ],
   "bytecode": "0x6060604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104be806100536000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806336f7ab5e146100675780638da5cb5b146100f5578063b967a52e1461014a578063f2fde38b146101a7575b600080fd5b341561007257600080fd5b61007a6101e0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100ba57808201518184015260208101905061009f565b50505050905090810190601f1680156100e75780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561010057600080fd5b61010861027e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561015557600080fd5b6101a5600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506102a3565b005b34156101b257600080fd5b6101de600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610318565b005b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102765780601f1061024b57610100808354040283529160200191610276565b820191906000526020600020905b81548152906001019060200180831161025957829003601f168201915b505050505081565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102fe57600080fd5b80600190805190602001906103149291906103ed565b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561037357600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415156103ea57806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061042e57805160ff191683800117855561045c565b8280016001018555821561045c579182015b8281111561045b578251825591602001919060010190610440565b5b509050610469919061046d565b5090565b61048f91905b8082111561048b576000816000905550600101610473565b5090565b905600a165627a7a723058203ee25468adcca70f44afa5a5b28ff4c70db2d7d95a8b999495da98f8a28d115a0029",
   "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806336f7ab5e146100675780638da5cb5b146100f5578063b967a52e1461014a578063f2fde38b146101a7575b600080fd5b341561007257600080fd5b61007a6101e0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100ba57808201518184015260208101905061009f565b50505050905090810190601f1680156100e75780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561010057600080fd5b61010861027e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561015557600080fd5b6101a5600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506102a3565b005b34156101b257600080fd5b6101de600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610318565b005b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102765780601f1061024b57610100808354040283529160200191610276565b820191906000526020600020905b81548152906001019060200180831161025957829003601f168201915b505050505081565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102fe57600080fd5b80600190805190602001906103149291906103ed565b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561037357600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415156103ea57806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061042e57805160ff191683800117855561045c565b8280016001018555821561045c579182015b8281111561045b578251825591602001919060010190610440565b5b509050610469919061046d565b5090565b61048f91905b8082111561048b576000816000905550600101610473565b5090565b905600a165627a7a723058203ee25468adcca70f44afa5a5b28ff4c70db2d7d95a8b999495da98f8a28d115a0029",
-  "sourceMap": "210:339:4:-;;;415:10:5;407:5;;:18;;;;;;;;;;;;;;;;;;210:339:4;;;;;;",
-  "deployedSourceMap": "210:339:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;248:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:20:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;450:97:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;758:124:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;248:32:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;239:20:5:-;;;;;;;;;;;;;:::o;450:97:4:-;557:5:5;;;;;;;;;;;543:19;;:10;:19;;;;539:45;;;572:5;;;539:45;535:4:4;514:18;:25;;;;;;;;;;;;:::i;:::-;;450:97;:::o;758:124:5:-;557:5;;;;;;;;;;;543:19;;:10;:19;;;;539:45;;;572:5;;;539:45;843:1;823:22;;:8;:22;;;;819:59;;;863:8;855:5;;:16;;;;;;;;;;;;;;;;;;819:59;758:124;:::o;210:339:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "sourceMap": "210:339:3:-;;;415:10:4;407:5;;:18;;;;;;;;;;;;;;;;;;210:339:3;;;;;;",
+  "deployedSourceMap": "210:339:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;248:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:20:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;450:97:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;758:124:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;248:32:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;239:20:4:-;;;;;;;;;;;;;:::o;450:97:3:-;557:5:4;;;;;;;;;;;543:19;;:10;:19;;;;539:45;;;572:5;;;539:45;535:4:3;514:18;:25;;;;;;;;;;;;:::i;:::-;;450:97;:::o;758:124:4:-;557:5;;;;;;;;;;;543:19;;:10;:19;;;;539:45;;;572:5;;;539:45;843:1;823:22;;:8;:22;;;;819:59;;;863:8;855:5;;:16;;;;;;;;;;;;;;;;;;819:59;758:124;:::o;210:339:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.8;\n\nimport './Ownable.sol';\n\n/**\n * @title Contactable token\n * @dev Basic version of a contactable contract, allowing the owner to provide a string with their \n * contact information.\n */\ncontract Contactable is Ownable{\n\n    string public contactInformation;\n\n    /**\n     * @dev Allows the owner to set a string with their contact information.\n     * @param info The contact information to attach to the contract.\n     */\n    function setContactInformation(string info) onlyOwner{\n         contactInformation = info;\n     }\n}\n",
   "sourcePath": "/Users/christopherarguello/Desktop/Bushido/Clients/RecordGram/Development/TuneTokens/contracts/zeppelin/ownership/Contactable.sol",
   "ast": {
     "absolutePath": "/Users/christopherarguello/Desktop/Bushido/Clients/RecordGram/Development/TuneTokens/contracts/zeppelin/ownership/Contactable.sol",
     "exportedSymbols": {
       "Contactable": [
-        684
+        627
       ]
     },
-    "id": 685,
+    "id": 628,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 666,
+        "id": 609,
         "literals": [
           "solidity",
           "^",
@@ -83,16 +83,16 @@
           ".8"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:4"
+        "src": "0:23:3"
       },
       {
         "absolutePath": "/Users/christopherarguello/Desktop/Bushido/Clients/RecordGram/Development/TuneTokens/contracts/zeppelin/ownership/Ownable.sol",
         "file": "./Ownable.sol",
-        "id": 667,
+        "id": 610,
         "nodeType": "ImportDirective",
-        "scope": 685,
-        "sourceUnit": 729,
-        "src": "25:23:4",
+        "scope": 628,
+        "sourceUnit": 672,
+        "src": "25:23:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -102,42 +102,42 @@
             "arguments": [],
             "baseName": {
               "contractScope": null,
-              "id": 668,
+              "id": 611,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 728,
-              "src": "234:7:4",
+              "referencedDeclaration": 671,
+              "src": "234:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$728",
+                "typeIdentifier": "t_contract$_Ownable_$671",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 669,
+            "id": 612,
             "nodeType": "InheritanceSpecifier",
-            "src": "234:7:4"
+            "src": "234:7:3"
           }
         ],
         "contractDependencies": [
-          728
+          671
         ],
         "contractKind": "contract",
         "documentation": "@title Contactable token\n@dev Basic version of a contactable contract, allowing the owner to provide a string with their \ncontact information.",
         "fullyImplemented": true,
-        "id": 684,
+        "id": 627,
         "linearizedBaseContracts": [
-          684,
-          728
+          627,
+          671
         ],
         "name": "Contactable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 671,
+            "id": 614,
             "name": "contactInformation",
             "nodeType": "VariableDeclaration",
-            "scope": 684,
-            "src": "248:32:4",
+            "scope": 627,
+            "src": "248:32:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -145,10 +145,10 @@
               "typeString": "string storage ref"
             },
             "typeName": {
-              "id": 670,
+              "id": 613,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "248:6:4",
+              "src": "248:6:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string storage pointer"
@@ -159,26 +159,26 @@
           },
           {
             "body": {
-              "id": 682,
+              "id": 625,
               "nodeType": "Block",
-              "src": "503:44:4",
+              "src": "503:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 680,
+                    "id": 623,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 678,
+                      "id": 621,
                       "name": "contactInformation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 671,
-                      "src": "514:18:4",
+                      "referencedDeclaration": 614,
+                      "src": "514:18:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -188,67 +188,67 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 679,
+                      "id": 622,
                       "name": "info",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 673,
-                      "src": "535:4:4",
+                      "referencedDeclaration": 616,
+                      "src": "535:4:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "514:25:4",
+                    "src": "514:25:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 681,
+                  "id": 624,
                   "nodeType": "ExpressionStatement",
-                  "src": "514:25:4"
+                  "src": "514:25:3"
                 }
               ]
             },
-            "id": 683,
+            "id": 626,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": [],
-                "id": 676,
+                "id": 619,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 675,
+                  "id": 618,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 708,
-                  "src": "494:9:4",
+                  "referencedDeclaration": 651,
+                  "src": "494:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "494:9:4"
+                "src": "494:9:3"
               }
             ],
             "name": "setContactInformation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 674,
+              "id": 617,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 673,
+                  "id": 616,
                   "name": "info",
                   "nodeType": "VariableDeclaration",
-                  "scope": 683,
-                  "src": "481:11:4",
+                  "scope": 626,
+                  "src": "481:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -256,10 +256,10 @@
                     "typeString": "string memory"
                   },
                   "typeName": {
-                    "id": 672,
+                    "id": 615,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "481:6:4",
+                    "src": "481:6:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string storage pointer"
@@ -269,40 +269,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "480:13:4"
+              "src": "480:13:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 677,
+              "id": 620,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "503:0:4"
+              "src": "503:0:3"
             },
-            "scope": 684,
-            "src": "450:97:4",
+            "scope": 627,
+            "src": "450:97:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 685,
-        "src": "210:339:4"
+        "scope": 628,
+        "src": "210:339:3"
       }
     ],
-    "src": "0:550:4"
+    "src": "0:550:3"
   },
   "legacyAST": {
     "absolutePath": "/Users/christopherarguello/Desktop/Bushido/Clients/RecordGram/Development/TuneTokens/contracts/zeppelin/ownership/Contactable.sol",
     "exportedSymbols": {
       "Contactable": [
-        684
+        627
       ]
     },
-    "id": 685,
+    "id": 628,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 666,
+        "id": 609,
         "literals": [
           "solidity",
           "^",
@@ -310,16 +310,16 @@
           ".8"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:4"
+        "src": "0:23:3"
       },
       {
         "absolutePath": "/Users/christopherarguello/Desktop/Bushido/Clients/RecordGram/Development/TuneTokens/contracts/zeppelin/ownership/Ownable.sol",
         "file": "./Ownable.sol",
-        "id": 667,
+        "id": 610,
         "nodeType": "ImportDirective",
-        "scope": 685,
-        "sourceUnit": 729,
-        "src": "25:23:4",
+        "scope": 628,
+        "sourceUnit": 672,
+        "src": "25:23:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -329,42 +329,42 @@
             "arguments": [],
             "baseName": {
               "contractScope": null,
-              "id": 668,
+              "id": 611,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 728,
-              "src": "234:7:4",
+              "referencedDeclaration": 671,
+              "src": "234:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$728",
+                "typeIdentifier": "t_contract$_Ownable_$671",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 669,
+            "id": 612,
             "nodeType": "InheritanceSpecifier",
-            "src": "234:7:4"
+            "src": "234:7:3"
           }
         ],
         "contractDependencies": [
-          728
+          671
         ],
         "contractKind": "contract",
         "documentation": "@title Contactable token\n@dev Basic version of a contactable contract, allowing the owner to provide a string with their \ncontact information.",
         "fullyImplemented": true,
-        "id": 684,
+        "id": 627,
         "linearizedBaseContracts": [
-          684,
-          728
+          627,
+          671
         ],
         "name": "Contactable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 671,
+            "id": 614,
             "name": "contactInformation",
             "nodeType": "VariableDeclaration",
-            "scope": 684,
-            "src": "248:32:4",
+            "scope": 627,
+            "src": "248:32:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -372,10 +372,10 @@
               "typeString": "string storage ref"
             },
             "typeName": {
-              "id": 670,
+              "id": 613,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "248:6:4",
+              "src": "248:6:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string storage pointer"
@@ -386,26 +386,26 @@
           },
           {
             "body": {
-              "id": 682,
+              "id": 625,
               "nodeType": "Block",
-              "src": "503:44:4",
+              "src": "503:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 680,
+                    "id": 623,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 678,
+                      "id": 621,
                       "name": "contactInformation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 671,
-                      "src": "514:18:4",
+                      "referencedDeclaration": 614,
+                      "src": "514:18:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -415,67 +415,67 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 679,
+                      "id": 622,
                       "name": "info",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 673,
-                      "src": "535:4:4",
+                      "referencedDeclaration": 616,
+                      "src": "535:4:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "514:25:4",
+                    "src": "514:25:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 681,
+                  "id": 624,
                   "nodeType": "ExpressionStatement",
-                  "src": "514:25:4"
+                  "src": "514:25:3"
                 }
               ]
             },
-            "id": 683,
+            "id": 626,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": [],
-                "id": 676,
+                "id": 619,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 675,
+                  "id": 618,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 708,
-                  "src": "494:9:4",
+                  "referencedDeclaration": 651,
+                  "src": "494:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "494:9:4"
+                "src": "494:9:3"
               }
             ],
             "name": "setContactInformation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 674,
+              "id": 617,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 673,
+                  "id": 616,
                   "name": "info",
                   "nodeType": "VariableDeclaration",
-                  "scope": 683,
-                  "src": "481:11:4",
+                  "scope": 626,
+                  "src": "481:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -483,10 +483,10 @@
                     "typeString": "string memory"
                   },
                   "typeName": {
-                    "id": 672,
+                    "id": 615,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "481:6:4",
+                    "src": "481:6:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string storage pointer"
@@ -496,27 +496,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "480:13:4"
+              "src": "480:13:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 677,
+              "id": 620,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "503:0:4"
+              "src": "503:0:3"
             },
-            "scope": 684,
-            "src": "450:97:4",
+            "scope": 627,
+            "src": "450:97:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 685,
-        "src": "210:339:4"
+        "scope": 628,
+        "src": "210:339:3"
       }
     ],
-    "src": "0:550:4"
+    "src": "0:550:3"
   },
   "compiler": {
     "name": "solc",
@@ -524,5 +524,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-26T16:40:02.675Z"
+  "updatedAt": "2018-04-19T18:52:54.313Z"
 }
