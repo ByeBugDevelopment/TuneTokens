@@ -99,14 +99,6 @@ contract("TuneToken", (accounts) => {
             })
     })
 
-    it("should not be paused on contract creation when Pausable", () => {
-        return TuneToken.deployed().then((instance) => {
-            return instance.paused.call()
-        })
-            .then((paused) => {
-                assert.equal(paused, false, "Contract should not be paused when created")
-            })
-    })
 
     it("should be able to be paused and unpaused by owner when Pausable", () => {
         var meta
@@ -502,25 +494,6 @@ contract("TuneToken", (accounts) => {
             })
     })
 
-    it("should not allow transfer() when _to is the contract address", () => {
-        var meta
-        var xferAmt = 100000000
-
-        return TuneToken.deployed().then((instance) => {
-            meta = instance
-            return meta.transfer(meta.address, xferAmt, {
-                from: accounts[0]
-            })
-        })
-            .then(assert.fail)
-            .catch((error) => {
-                assert(
-                    error.message.indexOf("invalid opcode") >= 0,
-                    "accounts trying to transfer() when _to is the contract address should throw an invalid opcode exception."
-                )
-            })
-    })
-
     it("should not allow transferFrom() when _to is null", () => {
         var meta
         var xferAmt = 100000000
@@ -588,53 +561,6 @@ contract("TuneToken", (accounts) => {
                 meta.approve(accounts[1], 0, {
                     from: accounts[0]
                 })
-            })
-    })
-
-    it("should not allow transferFrom() when _to is the contract address", () => {
-        var meta
-        var xferAmt = 100000000
-
-        return TuneToken.deployed().then((instance) => {
-            meta = instance
-            return meta.approve(accounts[1], xferAmt, {
-                from: accounts[0]
-            })
-        })
-            .then(() => {
-                utils.assertEvent(meta, {
-                    event: "Approval"
-                })
-            })
-            .then(() => {
-                return meta.transferFrom(accounts[0], meta.address, xferAmt, {
-                    from: accounts[1]
-                })
-            })
-            .then(assert.fail)
-            .catch((error) => {
-                assert(
-                    error.message.indexOf("invalid opcode") >= 0,
-                    "accounts trying to transferFrom() when _to is the contract address should throw an invalid opcode exception."
-                )
-            })
-            .then(() => {
-                // reset
-                meta.approve(accounts[1], 0, {
-                    from: accounts[0]
-                })
-            })
-    })
-
-    it("should not be able to send ETH to contract", () => {
-        return TuneToken.deployed().then((instance) => {
-            return instance.send(web3.toWei(1, "ether"))
-        }).
-            then(assert.fail)
-            .catch((error) => {
-                assert(error.message.indexOf("invalid opcode") >= 0,
-                    "account cannot send ETH to this contract"
-                )
             })
     })
 
