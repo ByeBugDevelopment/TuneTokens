@@ -10,22 +10,17 @@ import '../SafeMath.sol';
  * @dev Basic version of StandardToken, with no allowances.
  */
 contract BasicToken is Ownable, ERC20Basic {
-  using SafeMath for uint;
+  using SafeMath for uint256;
 
-  mapping(address => uint) balances;
+  mapping(address => uint256) balances;
 
-  // additional variables for use if transaction fees ever became necessary
-  uint public basisPointsRate = 0;
-  uint public maximumFee = 0;
+  uint256 totalSupply_;
 
   /**
-   * @dev Fix for the ERC20 short address attack.
-   */
-  modifier onlyPayloadSize(uint size) {
-     if(msg.data.length < size + 4) {
-       throw;
-     }
-     _;
+  * @dev total number of tokens in existence
+  */
+  function totalSupply() public view returns (uint256) {
+    return totalSupply_;
   }
 
   /**
@@ -33,24 +28,23 @@ contract BasicToken is Ownable, ERC20Basic {
   * @param _to The address to transfer to.
   * @param _value The amount to be transferred.
   */
-  function transfer(address _to, uint _value) onlyPayloadSize(2 * 32) {
-    uint fee = (_value.mul(basisPointsRate)).div(10000);
-    if (fee > maximumFee) {
-      fee = maximumFee;
-    }
-    uint sendAmount = _value.sub(fee);
+  function transfer(address _to, uint256 _value) public returns (bool) {
+    require(_to != address(0));
+    require(_value <= balances[msg.sender]);
+
+    // SafeMath.sub will throw if there is not enough balance.
     balances[msg.sender] = balances[msg.sender].sub(_value);
-    balances[_to] = balances[_to].add(sendAmount);
-    balances[owner] = balances[owner].add(fee);
-    Transfer(msg.sender, _to, sendAmount);
+    balances[_to] = balances[_to].add(_value);
+    Transfer(msg.sender, _to, _value);
+    return true;
   }
 
   /**
   * @dev Gets the balance of the specified address.
   * @param _owner The address to query the the balance of.
-  * @return An uint representing the amount owned by the passed address.
+  * @return An uint256 representing the amount owned by the passed address.
   */
-  function balanceOf(address _owner) constant returns (uint balance) {
+  function balanceOf(address _owner) public view returns (uint256 balance) {
     return balances[_owner];
   }
 
