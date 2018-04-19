@@ -5,136 +5,59 @@ import './zeppelin/lifecycle/Pausable.sol';
 
 contract TuneToken is Pausable, StandardToken {
 
-  string public name;
-  string public symbol;
-  uint public decimals;
-  address public upgradedAddress;
-  bool public deprecated;
+  string public constant name = "TuneToken"; // solium-disable-line uppercase
+  string public constant symbol = "TUNE"; // solium-disable-line uppercase
+  uint8 public constant decimals = 18; // solium-disable-line uppercase
 
-  //  The contract can be initialized with a number of tokens
-  //  All the tokens are deposited to the owner address
-  //
-  // @param _balance Initial supply of the contract
-  // @param _name Token Name
-  // @param _symbol Token symbol
-  // @param _decimals Token decimals
-  function TuneToken(uint _initialSupply, string _name, string _symbol, uint _decimals){
-      _totalSupply = _initialSupply;
-      name = _name;
-      symbol = _symbol;
-      decimals = _decimals;
-      balances[owner] = _initialSupply;
-      deprecated = false;
+  uint256 public constant INITIAL_SUPPLY = 400000000;
+
+  /**
+   * @dev Constructor that gives msg.sender all of existing tokens.
+   */
+  function SimpleToken() public {
+    totalSupply_ = INITIAL_SUPPLY;
+    balances[msg.sender] = INITIAL_SUPPLY;
+    Transfer(0x0, msg.sender, INITIAL_SUPPLY);
   }
 
-  // // Forward ERC20 methods to upgraded contract if this one is deprecated
-  // function transfer(address _to, uint _value) whenNotPaused {
-  //   if (deprecated) {
-  //     return StandardToken(upgradedAddress).transfer(_to, _value);
-  //   } else {
-  //     return super.transfer(_to, _value);
-  //   }
-  // }
+  /**
+   * @dev Transfer token for a specified address when not paused
+   * @param _to The address to transfer to.
+   * @param _value The amount to be transferred.
+   */    function transfer(address _to, uint256 _value) public whenNotPaused returns (bool) {
+      return super.transfer(_to, _value);
+    }
 
-  // // Forward ERC20 methods to upgraded contract if this one is deprecated
-  // function transferFrom(address _from, address _to, uint _value) whenNotPaused {
-  //   if (deprecated) {
-  //     return StandardToken(upgradedAddress).transferFrom(_from, _to, _value);
-  //   } else {
-  //     return super.transferFrom(_from, _to, _value);
-  //   }
-  // }
+  /**
+   * @dev Transfer tokens from one address to another when not paused
+   * @param _from address The address which you want to send tokens from
+   * @param _to address The address which you want to transfer to
+   * @param _value uint256 the amount of tokens to be transferred
+   */
+  function transferFrom(address _from, address _to, uint256 _value) public whenNotPaused returns (bool) {
+    return super.transferFrom(_from, _to, _value);
+  }
+  /**
+   * @dev Aprove the passed address to spend the specified amount of tokens on behalf of msg.sender when not paused.
+   * @param _spender The address which will spend the funds.
+   * @param _value The amount of tokens to be spent.
+   */
+  function approve(address _spender, uint256 _value) public whenNotPaused returns (bool) {
+    return super.approve(_spender, _value);
+  }
 
-  // // Forward ERC20 methods to upgraded contract if this one is deprecated
-  // function balanceOf(address who) constant returns (uint){
-  //   if (deprecated) {
-  //     return StandardToken(upgradedAddress).balanceOf(who);
-  //   } else {
-  //     return super.balanceOf(who);
-  //   }
-  // }
+  /**
+   * Adding whenNotPaused
+   */
+  function increaseApproval (address _spender, uint _addedValue) public whenNotPaused returns (bool success) {
+    return super.increaseApproval(_spender, _addedValue);
+  }
 
-  // // Forward ERC20 methods to upgraded contract if this one is deprecated
-  // function approve(address _spender, uint _value) onlyPayloadSize(2 * 32) {
-  //   if (deprecated) {
-  //     return StandardToken(upgradedAddress).approve(_spender, _value);
-  //   } else {
-  //     return super.approve(_spender, _value);
-  //   }
-  // }
+  /**
+   * Adding whenNotPaused
+   */
+  function decreaseApproval (address _spender, uint _subtractedValue) public whenNotPaused returns (bool success) {
+    return super.decreaseApproval(_spender, _subtractedValue);
+  }
 
-  // // Forward ERC20 methods to upgraded contract if this one is deprecated
-  // function allowance(address _owner, address _spender) constant returns (uint remaining) {
-  //   if (deprecated) {
-  //     return StandardToken(upgradedAddress).allowance(_owner, _spender);
-  //   } else {
-  //     return super.allowance(_owner, _spender);
-  //   }
-  // }
-
-  // // deprecate current contract in favour of a new one
-  // function deprecate(address _upgradedAddress) onlyOwner {
-  //   deprecated = true;
-  //   upgradedAddress = _upgradedAddress;
-  //   Deprecate(_upgradedAddress);
-  // }
-
-  // // deprecate current contract if favour of a new one
-  // function totalSupply() constant returns (uint){
-  //   if (deprecated) {
-  //     return StandardToken(upgradedAddress).totalSupply();
-  //   } else {
-  //     return _totalSupply;
-  //   }
-  // }
-
-  // // Issue a new amount of tokens
-  // // these tokens are deposited into the owner address
-  // //
-  // // @param _amount Number of tokens to be issued
-  // function issue(uint amount) onlyOwner {
-  //   if (_totalSupply + amount < _totalSupply) throw;
-  //   if (balances[owner] + amount < balances[owner]) throw;
-
-  //   balances[owner] += amount;
-  //   _totalSupply += amount;
-  //   Issue(amount);
-  // }
-
-  // // Redeem tokens.
-  // // These tokens are withdrawn from the owner address
-  // // if the balance must be enough to cover the redeem
-  // // or the call will fail.
-  // // @param _amount Number of tokens to be issued
-  // function redeem(uint amount) onlyOwner {
-  //     if (_totalSupply < amount) throw;
-  //     if (balances[owner] < amount) throw;
-
-  //     _totalSupply -= amount;
-  //     balances[owner] -= amount;
-  //     Redeem(amount);
-  // }
-
-  // function setParams(uint newBasisPoints, uint newMaxFee) onlyOwner {
-  //     // Ensure transparency by hardcoding limit beyond which fees can never be added
-  //     if (newBasisPoints > 20) throw;
-  //     if (newMaxFee > 50) throw;
-
-  //     basisPointsRate = newBasisPoints;
-  //     maximumFee = newMaxFee.mul(10**decimals);
-
-  //     Params(basisPointsRate, maximumFee);
-  // }
-
-  // // Called when new token are issued
-  // event Issue(uint amount);
-
-  // // Called when tokens are redeemed
-  // event Redeem(uint amount);
-
-  // // Called when contract is deprecated
-  // event Deprecate(address newAddress);
-
-  // // Called if contract ever adds fees
-  // event Params(uint feeBasisPoints, uint maxFee);
 }
