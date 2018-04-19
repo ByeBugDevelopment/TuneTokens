@@ -32,21 +32,21 @@ contract("TuneToken", (accounts) => {
             })
     })
 
-    it("should set totalSupply to 1e17 Grains", () => {
+    it("should set totalSupply to 1e17 TUNE", () => {
         return TuneToken.deployed().then((instance) => {
             return instance.totalSupply.call()
         })
             .then((supply) => {
-                assert.equal(supply, 1e17, "1e17 wasn't the value of totalSupply Grains")
+                assert.equal(supply, 1e17, "1e17 wasn't the value of totalSupply TUNE")
             })
     })
 
-    it("should put 1e17 Grains in the first account", () => {
+    it("should put 1e17 TUNE in the first account", () => {
         return TuneToken.deployed().then((instance) => {
             return instance.balanceOf.call(accounts[0])
         })
             .then((balance) => {
-                assert.equal(balance.valueOf(), 1e17, "1e17 Grains were not assigned to the first account")
+                assert.equal(balance.valueOf(), 1e17, "1e17 TUNE were not assigned to the first account")
             })
     })
 
@@ -198,7 +198,7 @@ contract("TuneToken", (accounts) => {
             })
     })
 
-    it("should allow transfer() of Grains by address owner when unpaused", () => {
+    it("should allow transfer() of TUNE by address owner when unpaused", () => {
         var meta
         var xferAmt = 100000000
         var account0StartingBalance
@@ -265,7 +265,7 @@ contract("TuneToken", (accounts) => {
             })
             .then((balance) => {
                 account1StartingBalance = balance.toNumber()
-                // account 1 first needs approval to move Grains from account 0
+                // account 1 first needs approval to move TUNE from account 0
                 return meta.approve(accounts[1], xferAmt, {
                     from: accounts[0]
                 })
@@ -276,7 +276,7 @@ contract("TuneToken", (accounts) => {
                 })
             })
             .then((balance) => {
-                // with prior approval, account 1 can transfer Grains from account 0
+                // with prior approval, account 1 can transfer TUNE from account 0
                 return meta.transferFrom(accounts[0], accounts[1], xferAmt, {
                     from: accounts[1]
                 })
