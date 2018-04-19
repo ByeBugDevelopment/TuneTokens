@@ -1,5 +1,5 @@
-var TuneTokens = artifacts.require("TuneToken");
+var TuneToken = artifacts.require("TuneToken");
 
 module.exports = function(deployer) {
-  deployer.deploy(TuneTokens, 400000000, "TuneTokens", "TUNE", 18);
+  deployer.deploy(TuneToken, 400000000, "TuneTokens", "TUNE", 18);
 };
