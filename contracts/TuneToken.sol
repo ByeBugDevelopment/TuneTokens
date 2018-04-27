@@ -15,7 +15,7 @@ contract TuneToken is Pausable, StandardToken {
    * @dev Constructor that gives msg.sender all of existing tokens.
    */
   function TuneToken() public {
-    _totalSupply = INITIAL_SUPPLY;
+    totalSupply_ = INITIAL_SUPPLY
     balances[msg.sender] = INITIAL_SUPPLY;
     Transfer(0x0, msg.sender, INITIAL_SUPPLY);
   }
